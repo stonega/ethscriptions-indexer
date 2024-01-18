@@ -1,4 +1,6 @@
 [phases.setup]
-nixPkgs = ['...', 'libpq-dev']
+nixPkgs = ['...', 'postgresql-dev']
+[phases.install]
+cmds = ["bundle install"]
 [phases.build]
-cmds = ["rails db:create", "rails db:migrate", "...", ""]
+cmds = ["rails db:create", "rails db:migrate"]
