@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: eths_indexer_production
-  username: eths_indexer
-  password: <%= ENV["ETHS_INDEXER_DATABASE_PASSWORD"] %>
+  url: <%= ENV["ETH_INDXEDER_DATABASE_URL"] %>
+  # database: eths_indexer_production
+  # username: eths_indexer
+  # password: <%= ENV["ETHS_INDEXER_DATABASE_PASSWORD"] %>
