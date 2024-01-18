@@ -35,11 +35,18 @@ On a Mac you might run into an issue with openssl. If you do you might need to r
 ```bash
 rvm install 3.2.2 --with-openssl-dir=$(brew --prefix openssl@1.1)
 ```
-
 Install the gems (libraries) the app needs:
 
 ```bash
+bundle config path ~/.local/share
 bundle install
+```
+
+Install development tools if you have not.
+
+```bash
+sudo dnf install @development-tools
+sudo dnf install @rpm-development-tools # missing
 ```
 
 Install postgres if you don't already have it:

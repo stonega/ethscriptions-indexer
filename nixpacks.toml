@@ -1,0 +1,4 @@
+[phases.setup]
+nixPkgs = ['...', 'libpq-dev']
+[phases.build]
+cmds = ["rails db:create", "rails db:migrate", "...", ""]
