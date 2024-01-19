@@ -1,3 +1,5 @@
+[phases.setup]
+pkgs = ["...", "automake"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
