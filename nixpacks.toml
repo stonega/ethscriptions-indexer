@@ -1,5 +1,5 @@
 [phases.setup]
-pkgs = ["...", "automake", "build-essential", "pkg-config", "libtool", "libffi-dev", "libssl-dev", "libgmp-dev", "python3-dev"]
+nixPkgs = ["...", "automake", "build-essential", "pkg-config", "libtool", "libffi-dev", "libssl-dev", "libgmp-dev", "python3-dev"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
