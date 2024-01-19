@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev", "postgresql-client"]
+aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev", "postgresql-client-16"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
