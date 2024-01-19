@@ -5,6 +5,6 @@ cmds = ["bundle install"]
 [phases.build]
 cmds = []
 [phases.release]
-cmds = ["rails db:create", "rails db:migrate", "..."]
+cmds = ["rails db:create", "rails db:migrate"]
 [start]
 cmd = "rails s -p 4000"
