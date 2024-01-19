@@ -1,9 +1,9 @@
 [phases.setup]
 aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev"]
 [phases.install]
-cmds = ["ls", "./psql.sh", "bundle install"]
+cmds = ["bundle install"]
 [phases.build]
-cmds = []
+cmd = "./psql.sh"
 [phases.release]
 cmds = ["rails db:create", "rails db:migrate"]
 [start]
