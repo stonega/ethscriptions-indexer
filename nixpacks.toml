@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["...", "automake"]
+nixPkgs = ["...", "automake", "libffi-dev","libgmp-dev", "libssl-dev"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
