@@ -1,8 +1,10 @@
 [phases.setup]
-aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev"]
+aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
 cmds = []
 [phases.release]
 cmds = ["rails db:create", "rails db:migrate"]
+[start]
+cmd = "rails s -p 4000"
