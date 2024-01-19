@@ -4,7 +4,7 @@ aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool
 cmds = ["bundle install"]
 [phases.build]
 cmds = []
-[phases.start]
+[phases.release]
 cmds = ["rails db:create", "rails db:migrate", "..."]
 [start]
 cmd = "rails s -p 4000"
