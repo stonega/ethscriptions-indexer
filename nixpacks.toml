@@ -1,7 +1,7 @@
 [phases.setup]
 aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev"]
 [phases.install]
-cmds = ["ll", "./psql.sh", "bundle install"]
+cmds = ["ls", "./psql.sh", "bundle install"]
 [phases.build]
 cmds = []
 [phases.release]
