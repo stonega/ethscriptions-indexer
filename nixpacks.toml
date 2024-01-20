@@ -1,5 +1,5 @@
 [phases.setup]
-aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev", "wget"]
+aptPkgs = ["...", "automake", "libgmp-dev", "libffi-dev", "pkg-config", "libtool", "python3-dev", "wget", "gnupg2"]
 [phases.install]
 cmds = ["bundle install"]
 [phases.build]
